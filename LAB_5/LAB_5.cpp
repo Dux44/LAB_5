@@ -72,7 +72,7 @@ int main() {
 
 	int num_threads = 32;
 	int step = 2;
-	//omp_set_nested(1); //вкладений паралелізм
+	omp_set_nested(1); 
 	init_arr();
 	double t1 = omp_get_wtime();
 	int min_index, min;
